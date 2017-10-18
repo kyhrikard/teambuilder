@@ -48,20 +48,20 @@ function printTeams(checkedPlayers) {
 }
 
 function createTeams(playerz) {
-    let team1 = "TEAM 1\n\n";
-    let team2 = "TEAM 2\n\n";
+    let team1 = "";
+    let team2 = "";
     let teamArray = [];
     let originalLength = playerz.length;
     while (playerz.length > (originalLength / 2)) {
         // Find a random player in the playerz array
         let rand = playerz[Math.floor(Math.random() * playerz.length)];
-        team1 += `${rand}\n`;
+        team1 += `${rand}<br/>`;
         // Removes the player from the playerz array
         playerz.splice(playerz.indexOf(rand), 1);
     }
     // Creates team 2 from the remaining players in the playerz array
     for (let i = 0; i < playerz.length; i++) {
-        team2 += `${playerz[i]}\n`;
+        team2 += `${playerz[i]}<br/>`;
     }
     teamArray.push(team1);
     teamArray.push(team2);

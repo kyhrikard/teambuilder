@@ -10,32 +10,53 @@
     font-family: monospace;
     color: #0f0;
     background-color: #333;
-    font-size: 20px;
-    margin: 5px;
 }
 
 input[type=checkbox] {
     transform: scale(1.5);
   }
 #shuffleButton{
-    margin-top: 10px;
-    border: 3px double #0f0;
-    padding:5px;
+    border: 1vh double #0f0;
+    padding: 0.5vh;
 }
 fieldset{
-    border: 3px double #0f0;
-    display: inline;
+    border: 0.1vh double #0f0;
 }
 header{
-    font-size: 30px;
+    font-size: 5vh;
 }
 footer{
+    margin-top: 3vh;
     text-align: center;
-    font-size: 10px;
+    font-size: 1.5vh;
 }
-textarea{
-    height: 200px;
-    resize: none;
-    width: 200px;
-    margin-top: 10px;
+#team1, #team2{
+    margin-top: 1vh;
+    padding: 0.5vh;
+    font-size: 3vh;
+    width: 30%;
+}
+#team2{
+    text-align: right;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    border: 0.1vh solid #0f0;
+}
+.wrapper * {
+    margin: 1vh;
+}
+.results {
+    display: flex;
+    justify-content: space-around;
+}
+.column {
+    float: left;
+}
+.vs {
+    margin-top: 5vh;
+    font-size: 6vh;
 }
